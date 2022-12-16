@@ -3,11 +3,11 @@ import axios from 'axios';
 
 
 export function useGetData(url){
-    const [requestData, setRequestData] = useState[{
+    const [requestData, setRequestData] = useState({
         loading: false,
         data: null,
         error: false
-    }]
+    })
 
     useEffect(() => {
         setRequestData({
