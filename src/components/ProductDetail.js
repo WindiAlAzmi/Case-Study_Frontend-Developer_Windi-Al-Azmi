@@ -29,7 +29,7 @@ const ProductDetail = () => {
 
        if (responseData.error) {
          content = (
-           <div className="w-full mt-10 grid place-items-center">
+           <div className="w-full mt-10 grid place-items-center ">
              <img className="md:h-64 md:w-1/2" src={errorImage} alt="errorImage" />
              <p>data is not found!</p>
            </div>
@@ -39,8 +39,8 @@ const ProductDetail = () => {
 
     if(responseData.data){
         content = (
-          <div className="mb-auto  w-full p-2">
-            <div className="flex md:w-1/3 md:ml-8 flex-col md:border-white border border-neutral-400 rounded-lg p-3">
+          <div className="w-full p-4">
+            <div className="flex md:w-1/3 md:ml-8 flex-col md:justify-start rounded-lg p-3">
               <h2 className=" font-bold text-xl mb-4 md:text-black text-white">{responseData.data.name}</h2>
               <div>
                 <img src={responseData.data.images[0].imageUrl} className="rounded-lg w-full" alt={responseData.data.name} />
@@ -52,7 +52,7 @@ const ProductDetail = () => {
               </div>
             </div>
              <Link to={`/`}>
-              <button className="  text-black md:w-1/6 w-full  h-10 mb-2 flex flex-cols justify-start gap-4 items-center  ml-10">
+              <button className="  text-black md:w-1/6 w-full  h-10 mb-2 flex flex-cols justify-start gap-4 items-center ml-2 md:ml-10">
                <BiArrowBack height="24"/><p>Back</p>
                 </button>
                 </Link>
@@ -65,7 +65,7 @@ const ProductDetail = () => {
 
 
     return (
-        <div className="w-full">
+        <div className="w-full h-screen grow md:mb-20 p-4">
             {content}
         </div>
     )

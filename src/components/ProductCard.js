@@ -11,9 +11,10 @@ const ProductCard = ({data}) => {
                 <p className="text-base font-bold ">$ {data.price}</p>
                 <p className="text-base ">{data.description}</p>
             </div>
+            <Link to={`/product/${data.id}`}>
             <button className="bg-sky-900 border border-black text-white  w-full rounded-lg h-10 mb-2 grid place-items-center">
-                <Link to={`/product/${data.id}`}>View</Link>
-                </button>
+                View
+                </button></Link >
         </div>
     )
 }
