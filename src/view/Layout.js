@@ -5,7 +5,7 @@ import {Outlet} from 'react-router-dom';
 
 const Layout = () => {
     return (
-        <div className=" h-screen flex flex-col border border-2 black text-black">
+        <div className=" h-screen flex flex-col ">
             <Header />
             <Outlet />
             <Footer />
