@@ -1,4 +1,4 @@
-import React , {useState, useEffect}from 'react';
+import React , {useState}from 'react';
 import { FaBars } from "react-icons/fa";
 import { useTransition, animated } from "@react-spring/web";
 import NavigationMenu from './NavigationMenu';

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useGetData } from './../hooks/HttpRequest';
 import ProductCard from './../components/ProductCard';
 import errorImage from './../images/errorImage.svg';
